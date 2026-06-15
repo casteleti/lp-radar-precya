@@ -3,7 +3,7 @@ import { Container, FAQItem, Motion, SectionSubtitle, SectionTitle } from '../ui
 
 export function FAQSection() {
   return (
-    <section id="faq" className="bg-surface/55 py-14 md:py-20" aria-labelledby="faq-title">
+    <section id="faq" className="bg-lilac/28 py-14 md:py-20" aria-labelledby="faq-title">
       <Container size="md">
         <Motion>
           <SectionTitle eyebrow="FAQ" id="faq-title">

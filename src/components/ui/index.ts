@@ -1,5 +1,6 @@
 export { Badge } from './Badge'
 export { BenefitCard } from './BenefitCard'
+export { BrandLogo } from './BrandLogo'
 export { ButtonPrimary } from './ButtonPrimary'
 export { ButtonSecondary } from './ButtonSecondary'
 export { Card } from './Card'

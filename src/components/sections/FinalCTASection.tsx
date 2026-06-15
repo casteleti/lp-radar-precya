@@ -5,12 +5,12 @@ export function FinalCTASection() {
     <section id="final-cta" className="py-14 md:py-20" aria-labelledby="final-cta-title">
       <Container>
         <Motion variant="scale-in">
-          <div className="overflow-hidden rounded-[2rem] border border-primary-light/30 bg-primary-dark p-7 text-white shadow-premium md:p-12">
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-primary-dark p-7 text-white shadow-premium md:p-12">
             <div className="max-w-3xl">
-              <p className="text-microcopy font-extrabold uppercase tracking-[0.16em] text-primary-light">
+              <p className="text-microcopy font-semibold uppercase tracking-[0.18em] text-primary-light">
                 Proximo passo
               </p>
-              <h2 id="final-cta-title" className="text-headline mt-4 font-extrabold">
+              <h2 id="final-cta-title" className="text-headline mt-4 font-semibold">
                 Pare de decidir descontos no improviso.
               </h2>
               <p className="text-body mt-4 text-white/78">
@@ -32,7 +32,7 @@ export function FinalCTASection() {
                 Falar no WhatsApp
               </ButtonSecondary>
             </div>
-            <p className="text-caption mt-4 font-bold text-white/72">
+            <p className="text-caption mt-4 font-medium text-white/72">
               Sem cartao. Sem instalacao. Pensado para decisao rapida no celular.
             </p>
           </div>

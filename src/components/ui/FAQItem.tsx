@@ -11,10 +11,10 @@ export function FAQItem({ question, answer, defaultOpen = false }: FAQItemProps)
   const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
-    <div className="rounded-xl border border-border bg-surface">
+    <div className="rounded-[1.25rem] border border-white/80 bg-white/74 shadow-soft backdrop-blur">
       <button
         type="button"
-        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-extrabold text-text-primary transition hover:text-primary"
+        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-text-primary transition hover:text-primary"
         aria-expanded={isOpen}
         onClick={() => setIsOpen((current) => !current)}
       >

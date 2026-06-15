@@ -32,12 +32,12 @@ export function PricingCard({
     >
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-xl font-extrabold text-text-primary">{title}</h3>
+          <h3 className="text-xl font-semibold text-text-primary">{title}</h3>
           <p className="text-caption mt-2 text-text-secondary">{description}</p>
         </div>
         {badge ? <Badge>{badge}</Badge> : null}
       </div>
-      <p className="mt-6 text-4xl font-extrabold text-text-primary">{price}</p>
+      <p className="mt-6 text-4xl font-semibold text-text-primary">{price}</p>
       <Button className="mt-6 w-full" aria-label={ctaLabel}>
         {ctaLabel}
       </Button>

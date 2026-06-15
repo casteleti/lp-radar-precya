@@ -1,4 +1,4 @@
-import { Container } from '../ui'
+import { BrandLogo, Container } from '../ui'
 
 const links = ['Politica de Privacidade', 'Termos de Uso', 'Contato', 'Instagram', 'WhatsApp']
 
@@ -7,11 +7,8 @@ export function Footer() {
     <footer className="border-t border-border bg-surface/72">
       <Container className="pb-28 pt-8 md:py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <a href="#main-content" aria-label="Precya" className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary-dark text-sm font-extrabold text-white">
-              P
-            </span>
-            <span className="font-extrabold text-text-primary">Precya</span>
+          <a href="#main-content" aria-label="Radar Precya" className="flex items-center">
+            <BrandLogo />
           </a>
 
           <nav aria-label="Links do rodape" className="flex flex-wrap gap-x-5 gap-y-2">
@@ -19,7 +16,7 @@ export function Footer() {
               <a
                 key={link}
                 href="#final-cta"
-                className="text-caption font-bold text-text-secondary hover:text-primary"
+                className="text-caption font-medium text-text-secondary hover:text-primary"
               >
                 {link}
               </a>

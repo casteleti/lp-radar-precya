@@ -3,7 +3,7 @@ import { Card, Container, Motion, SectionSubtitle, SectionTitle } from '../ui'
 
 export function ProblemSection() {
   return (
-    <section className="bg-surface/55 py-14 md:py-20" aria-labelledby="problem-title">
+    <section className="bg-lilac/28 py-14 md:py-20" aria-labelledby="problem-title">
       <Container>
         <Motion>
           <SectionTitle eyebrow="Problema" id="problem-title">
@@ -32,7 +32,7 @@ export function ProblemSection() {
                     />
                   </svg>
                 </span>
-                <p className="mt-5 text-lg font-extrabold text-text-primary">{item}</p>
+                <p className="mt-5 text-lg font-semibold text-text-primary">{item}</p>
               </Card>
             </Motion>
           ))}

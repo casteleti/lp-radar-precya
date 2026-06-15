@@ -17,11 +17,11 @@ export function PricingSection() {
           </Motion>
 
           <Motion variant="scale-in" delay={120}>
-            <Card elevated className="border-primary-light ring-2 ring-primary-light/25">
+            <Card elevated className="border-primary-light/50 ring-1 ring-primary-light/20">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <Badge>Plano Profissional</Badge>
-                  <h3 className="mt-4 text-2xl font-extrabold text-text-primary">
+                  <h3 className="mt-4 text-2xl font-semibold text-text-primary">
                     Precya Profissional
                   </h3>
                   <p className="text-caption mt-2 text-text-secondary">
@@ -29,8 +29,8 @@ export function PricingSection() {
                   </p>
                 </div>
                 <p className="text-left sm:text-right">
-                  <span className="block text-4xl font-extrabold text-text-primary">R$ XX</span>
-                  <span className="text-caption font-bold text-text-secondary">/mes</span>
+                  <span className="block text-4xl font-semibold text-text-primary">R$ XX</span>
+                  <span className="text-caption font-medium text-text-secondary">/mes</span>
                 </p>
               </div>
 
@@ -38,7 +38,7 @@ export function PricingSection() {
                 {pricingFeatures.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center gap-3 text-sm font-bold text-text-secondary"
+                    className="flex items-center gap-3 text-sm font-medium text-text-secondary"
                   >
                     <span
                       className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-success/10 text-success"
@@ -55,7 +55,7 @@ export function PricingSection() {
                 <ButtonPrimary href="#final-cta" className="w-full">
                   Comecar teste gratis
                 </ButtonPrimary>
-                <div className="mt-3 flex flex-wrap justify-center gap-2 text-microcopy font-extrabold text-text-secondary">
+                <div className="mt-3 flex flex-wrap justify-center gap-2 text-microcopy font-semibold text-text-secondary">
                   <span className="rounded-full bg-background px-3 py-1.5">
                     Cancele quando quiser
                   </span>

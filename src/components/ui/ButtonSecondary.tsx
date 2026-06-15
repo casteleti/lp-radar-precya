@@ -13,10 +13,10 @@ type ButtonSecondaryProps =
 
 export function ButtonSecondary({ children, className, icon, ...props }: ButtonSecondaryProps) {
   const classes = cn(
-    'inline-flex min-h-13 items-center justify-center gap-2 rounded-xl border border-border bg-surface/86 px-5 py-3.5 text-sm font-extrabold text-primary-dark shadow-soft transition duration-300',
-    'hover:-translate-y-0.5 hover:border-primary-light hover:bg-white',
+    'inline-flex min-h-13 items-center justify-center gap-2 rounded-[1.15rem] border border-white/80 bg-surface/74 px-5 py-3.5 text-sm font-semibold text-primary-dark shadow-soft transition duration-300 backdrop-blur',
+    'hover:-translate-y-0.5 hover:border-primary-light/50 hover:bg-white/92',
     'active:translate-y-0 active:bg-primary-light/20',
-    'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary-bright/20',
+    'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary-bright/18',
     className,
   )
 

@@ -25,7 +25,7 @@ export function SolutionSection() {
             <ButtonPrimary href="#demo" className="mt-7 w-full sm:w-auto">
               Simular meu primeiro procedimento
             </ButtonPrimary>
-            <p className="text-caption mt-3 font-bold text-text-secondary">
+            <p className="text-caption mt-3 font-medium text-text-secondary">
               Veja o impacto antes de responder no WhatsApp.
             </p>
           </Motion>
@@ -33,12 +33,12 @@ export function SolutionSection() {
           <div className="grid gap-4 md:grid-cols-2">
             <Motion>
               <Card elevated>
-                <h3 className="text-xl font-extrabold text-text-primary">Voce informa</h3>
+                <h3 className="text-xl font-semibold text-text-primary">Voce informa</h3>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {solutionInputs.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full bg-primary-light/16 px-3 py-2 text-sm font-bold text-primary-dark"
+                      className="rounded-full bg-lilac/80 px-3 py-2 text-sm font-medium text-primary-dark"
                     >
                       {item}
                     </span>
@@ -49,12 +49,12 @@ export function SolutionSection() {
 
             <Motion delay={120}>
               <Card elevated>
-                <h3 className="text-xl font-extrabold text-text-primary">O Precya entrega</h3>
+                <h3 className="text-xl font-semibold text-text-primary">O Precya entrega</h3>
                 <ul className="mt-5 space-y-3">
                   {solutionBenefits.map((item) => (
                     <li
                       key={item}
-                      className="flex items-center gap-3 text-sm font-bold text-text-secondary"
+                      className="flex items-center gap-3 text-sm font-medium text-text-secondary"
                     >
                       <IconWrapper tone="success" className="h-7 w-7 rounded-lg">
                         <CheckIcon />

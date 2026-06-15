@@ -36,12 +36,12 @@ function ComparisonCard({
   return (
     <Motion delay={tone === 'success' ? 120 : 0}>
       <Card elevated className={tone === 'success' ? 'border-success/25' : 'border-danger/20'}>
-        <h3 className="text-2xl font-extrabold text-text-primary">{title}</h3>
+        <h3 className="text-2xl font-semibold text-text-primary">{title}</h3>
         <ul className="mt-5 space-y-3">
           {items.map((item) => (
             <li
               key={item}
-              className="flex items-center gap-3 text-sm font-bold text-text-secondary"
+              className="flex items-center gap-3 text-sm font-medium text-text-secondary"
             >
               <span
                 className={`grid h-7 w-7 shrink-0 place-items-center rounded-full ${

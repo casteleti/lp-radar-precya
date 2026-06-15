@@ -2,21 +2,24 @@
 
 @theme {
   --font-sans:
-    'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
 
-  --color-primary-dark: #2e1a73;
-  --color-primary: #5e3ecf;
-  --color-primary-bright: #7c4dff;
-  --color-primary-light: #b79cff;
-  --color-background: #faf9f8;
+  --color-primary-dark: #2f2366;
+  --color-primary: #6a50c7;
+  --color-primary-bright: #8068e6;
+  --color-primary-light: #c7b8ff;
+  --color-background: #fbfaf7;
   --color-surface: #ffffff;
-  --color-text-primary: #1d1836;
-  --color-text-secondary: #6f6790;
+  --color-surface-warm: #fffdf8;
+  --color-lilac: #f1ecff;
+  --color-champagne: #f6ead8;
+  --color-text-primary: #211b3d;
+  --color-text-secondary: #746d8d;
   --color-success: #2bae66;
   --color-warning: #f5a623;
   --color-danger: #e65a5a;
-  --color-border: #ece7f6;
+  --color-border: #eee8f7;
 
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -37,10 +40,10 @@
   --radius-xl: 1.25rem;
   --radius-2xl: 1.75rem;
 
-  --shadow-soft: 0 14px 42px rgb(46 26 115 / 0.08);
-  --shadow-card: 0 22px 70px rgb(29 24 54 / 0.1);
-  --shadow-premium: 0 28px 90px rgb(46 26 115 / 0.14);
-  --shadow-focus: 0 0 0 4px rgb(124 77 255 / 0.18);
+  --shadow-soft: 0 16px 44px rgb(47 35 102 / 0.07);
+  --shadow-card: 0 24px 76px rgb(33 27 61 / 0.08);
+  --shadow-premium: 0 30px 100px rgb(47 35 102 / 0.12);
+  --shadow-focus: 0 0 0 4px rgb(128 104 230 / 0.18);
 
   --breakpoint-xs: 23.4375rem;
   --breakpoint-sm: 24.375rem;
@@ -75,9 +78,9 @@ body {
   margin: 0;
   padding-bottom: env(safe-area-inset-bottom);
   background:
-    radial-gradient(circle at 14% -8%, rgb(183 156 255 / 0.22), transparent 28rem),
-    radial-gradient(circle at 92% 8%, rgb(94 62 207 / 0.08), transparent 24rem),
-    linear-gradient(180deg, #fff 0%, var(--color-background) 32rem);
+    radial-gradient(circle at 16% -10%, rgb(199 184 255 / 0.28), transparent 30rem),
+    radial-gradient(circle at 92% 6%, rgb(246 234 216 / 0.72), transparent 27rem),
+    linear-gradient(180deg, #fffdf9 0%, var(--color-background) 34rem);
 }
 
 button,
@@ -119,14 +122,14 @@ a {
 }
 
 .text-hero {
-  font-size: clamp(2.18rem, 1.85rem + 1.45vw, 4.65rem);
-  line-height: 1.04;
+  font-size: clamp(2rem, 1.76rem + 1.12vw, 3.85rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .text-headline {
-  font-size: clamp(2rem, 1.65rem + 1.6vw, 3.5rem);
-  line-height: 1.08;
+  font-size: clamp(1.72rem, 1.48rem + 1.08vw, 2.85rem);
+  line-height: 1.12;
   letter-spacing: 0;
 }
 
@@ -137,8 +140,8 @@ a {
 }
 
 .text-body {
-  font-size: 1rem;
-  line-height: 1.72;
+  font-size: clamp(0.98rem, 0.94rem + 0.18vw, 1.07rem);
+  line-height: 1.74;
 }
 
 .text-caption {
@@ -181,7 +184,24 @@ a {
 
 @media (min-width: 768px) {
   .text-hero {
-    line-height: 1.01;
+    line-height: 1.05;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .float-soft {
+    animation: float-soft 7s ease-in-out infinite;
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
   }
 }
 

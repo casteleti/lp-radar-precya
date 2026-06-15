@@ -14,7 +14,7 @@ export function DemoSection() {
   const [discount, setDiscount] = useState(25)
 
   return (
-    <section id="demo" className="bg-surface/55 py-14 md:py-20" aria-labelledby="demo-title">
+    <section id="demo" className="bg-champagne/18 py-14 md:py-20" aria-labelledby="demo-title">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Motion>
@@ -36,10 +36,10 @@ export function DemoSection() {
                   type="button"
                   aria-pressed={discount === option}
                   onClick={() => setDiscount(option)}
-                  className={`min-h-12 rounded-xl px-4 py-3 text-sm font-extrabold transition ${
+                  className={`min-h-12 rounded-[1rem] px-4 py-3 text-sm font-semibold transition ${
                     discount === option
                       ? 'bg-primary text-white shadow-soft'
-                      : 'border border-border/80 bg-surface/88 text-primary-dark hover:border-primary-light hover:bg-white'
+                      : 'border border-white/80 bg-white/70 text-primary-dark hover:border-primary-light/70 hover:bg-white'
                   }`}
                 >
                   {option}%
