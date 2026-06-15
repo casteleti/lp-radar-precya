@@ -20,10 +20,17 @@ export function ProblemSection() {
             <Motion key={item} delay={index * 70}>
               <Card className="h-full">
                 <span
-                  className="grid h-10 w-10 place-items-center rounded-xl bg-danger/10 text-lg"
+                  className="grid h-10 w-10 place-items-center rounded-xl bg-danger/10 text-danger"
                   aria-hidden="true"
                 >
-                  x
+                  <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none">
+                    <path
+                      d="m5.5 5.5 9 9m0-9-9 9"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeWidth="2.4"
+                    />
+                  </svg>
                 </span>
                 <p className="mt-5 text-lg font-extrabold text-text-primary">{item}</p>
               </Card>

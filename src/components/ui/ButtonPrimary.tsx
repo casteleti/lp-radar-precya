@@ -13,8 +13,8 @@ type ButtonPrimaryProps =
 
 export function ButtonPrimary({ children, className, icon, ...props }: ButtonPrimaryProps) {
   const classes = cn(
-    'inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-soft transition duration-300',
-    'hover:-translate-y-0.5 hover:bg-primary-bright hover:shadow-card',
+    'inline-flex min-h-13 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3.5 text-sm font-extrabold text-white shadow-soft transition duration-300',
+    'hover:-translate-y-0.5 hover:bg-primary-bright hover:shadow-premium',
     'active:translate-y-0 active:bg-primary-dark',
     'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary-bright/20',
     className,

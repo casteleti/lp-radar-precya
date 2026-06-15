@@ -5,7 +5,7 @@ export function FinalCTASection() {
     <section id="final-cta" className="py-14 md:py-20" aria-labelledby="final-cta-title">
       <Container>
         <Motion variant="scale-in">
-          <div className="overflow-hidden rounded-[2rem] border border-primary-light/40 bg-primary-dark p-7 text-white shadow-card md:p-12">
+          <div className="overflow-hidden rounded-[2rem] border border-primary-light/30 bg-primary-dark p-7 text-white shadow-premium md:p-12">
             <div className="max-w-3xl">
               <p className="text-microcopy font-extrabold uppercase tracking-[0.16em] text-primary-light">
                 Proximo passo
@@ -32,6 +32,9 @@ export function FinalCTASection() {
                 Falar no WhatsApp
               </ButtonSecondary>
             </div>
+            <p className="text-caption mt-4 font-bold text-white/72">
+              Sem cartao. Sem instalacao. Pensado para decisao rapida no celular.
+            </p>
           </div>
         </Motion>
       </Container>

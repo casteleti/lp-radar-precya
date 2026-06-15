@@ -25,6 +25,9 @@ export function SolutionSection() {
             <ButtonPrimary href="#demo" className="mt-7 w-full sm:w-auto">
               Simular meu primeiro procedimento
             </ButtonPrimary>
+            <p className="text-caption mt-3 font-bold text-text-secondary">
+              Veja o impacto antes de responder no WhatsApp.
+            </p>
           </Motion>
 
           <div className="grid gap-4 md:grid-cols-2">

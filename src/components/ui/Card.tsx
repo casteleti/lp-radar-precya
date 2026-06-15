@@ -10,7 +10,7 @@ export function Card({ children, elevated = false, className, ...props }: CardPr
   return (
     <div
       className={cn(
-        'rounded-2xl border border-border bg-surface p-5',
+        'rounded-2xl border border-border/80 bg-surface/88 p-5 backdrop-blur',
         elevated ? 'shadow-card' : 'shadow-soft',
         className,
       )}

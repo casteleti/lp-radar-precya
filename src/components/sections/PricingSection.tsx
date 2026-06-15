@@ -55,9 +55,12 @@ export function PricingSection() {
                 <ButtonPrimary href="#final-cta" className="w-full">
                   Comecar teste gratis
                 </ButtonPrimary>
-                <p className="text-caption mt-3 text-center font-bold text-text-secondary">
-                  Cancele quando quiser. Sem cartao.
-                </p>
+                <div className="mt-3 flex flex-wrap justify-center gap-2 text-microcopy font-extrabold text-text-secondary">
+                  <span className="rounded-full bg-background px-3 py-1.5">
+                    Cancele quando quiser
+                  </span>
+                  <span className="rounded-full bg-background px-3 py-1.5">Sem cartao</span>
+                </div>
               </div>
             </Card>
           </Motion>

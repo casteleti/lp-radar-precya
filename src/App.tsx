@@ -1,15 +1,45 @@
+import { lazy, Suspense } from 'react'
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
-import { BeforeAfterSection } from './components/sections/BeforeAfterSection'
-import { DemoSection } from './components/sections/DemoSection'
-import { FAQSection } from './components/sections/FAQSection'
-import { FinalCTASection } from './components/sections/FinalCTASection'
-import { FounderSection } from './components/sections/FounderSection'
 import { HeroSection } from './components/sections/HeroSection'
-import { PricingSection } from './components/sections/PricingSection'
-import { ProblemSection } from './components/sections/ProblemSection'
-import { SolutionSection } from './components/sections/SolutionSection'
-import { WhatsAppFloatingButton } from './components/ui'
+import { MobileStickyCTA, WhatsAppFloatingButton } from './components/ui'
+
+const ProblemSection = lazy(() =>
+  import('./components/sections/ProblemSection').then((module) => ({
+    default: module.ProblemSection,
+  })),
+)
+const SolutionSection = lazy(() =>
+  import('./components/sections/SolutionSection').then((module) => ({
+    default: module.SolutionSection,
+  })),
+)
+const DemoSection = lazy(() =>
+  import('./components/sections/DemoSection').then((module) => ({ default: module.DemoSection })),
+)
+const BeforeAfterSection = lazy(() =>
+  import('./components/sections/BeforeAfterSection').then((module) => ({
+    default: module.BeforeAfterSection,
+  })),
+)
+const FounderSection = lazy(() =>
+  import('./components/sections/FounderSection').then((module) => ({
+    default: module.FounderSection,
+  })),
+)
+const PricingSection = lazy(() =>
+  import('./components/sections/PricingSection').then((module) => ({
+    default: module.PricingSection,
+  })),
+)
+const FAQSection = lazy(() =>
+  import('./components/sections/FAQSection').then((module) => ({ default: module.FAQSection })),
+)
+const FinalCTASection = lazy(() =>
+  import('./components/sections/FinalCTASection').then((module) => ({
+    default: module.FinalCTASection,
+  })),
+)
 
 export default function App() {
   return (
@@ -17,16 +47,19 @@ export default function App() {
       <Header />
       <main id="main-content">
         <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <DemoSection />
-        <BeforeAfterSection />
-        <FounderSection />
-        <PricingSection />
-        <FAQSection />
-        <FinalCTASection />
+        <Suspense fallback={null}>
+          <ProblemSection />
+          <SolutionSection />
+          <DemoSection />
+          <BeforeAfterSection />
+          <FounderSection />
+          <PricingSection />
+          <FAQSection />
+          <FinalCTASection />
+        </Suspense>
       </main>
       <Footer />
+      <MobileStickyCTA />
       <WhatsAppFloatingButton />
     </>
   )

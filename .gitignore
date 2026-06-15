@@ -53,3 +53,8 @@ desktop.ini
 *.ntvs*
 *.njsproj
 *.sln
+
+# Local audits
+lighthouse-report.json
+.lighthouse-temp/
+.lighthouse-profile/

@@ -34,11 +34,12 @@ export function DemoSection() {
                 <button
                   key={option}
                   type="button"
+                  aria-pressed={discount === option}
                   onClick={() => setDiscount(option)}
-                  className={`rounded-xl px-4 py-3 text-sm font-extrabold transition ${
+                  className={`min-h-12 rounded-xl px-4 py-3 text-sm font-extrabold transition ${
                     discount === option
                       ? 'bg-primary text-white shadow-soft'
-                      : 'border border-border bg-surface text-primary-dark hover:border-primary-light'
+                      : 'border border-border/80 bg-surface/88 text-primary-dark hover:border-primary-light hover:bg-white'
                   }`}
                 >
                   {option}%

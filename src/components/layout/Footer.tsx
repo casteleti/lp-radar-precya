@@ -5,7 +5,7 @@ const links = ['Politica de Privacidade', 'Termos de Uso', 'Contato', 'Instagram
 export function Footer() {
   return (
     <footer className="border-t border-border bg-surface/72">
-      <Container className="py-8">
+      <Container className="pb-28 pt-8 md:py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <a href="#main-content" aria-label="Precya" className="flex items-center gap-2">
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary-dark text-sm font-extrabold text-white">

@@ -29,14 +29,14 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-bold text-text-secondary transition hover:text-primary"
+              className="inline-flex min-h-11 items-center rounded-full px-2 text-sm font-bold text-text-secondary transition hover:bg-primary-light/10 hover:text-primary"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <ButtonPrimary href="#preco" className="min-h-10 px-4 py-2 text-xs sm:text-sm">
+        <ButtonPrimary href="#preco" className="min-h-11 px-4 py-2 text-xs sm:text-sm">
           Teste gratis
         </ButtonPrimary>
       </Container>
