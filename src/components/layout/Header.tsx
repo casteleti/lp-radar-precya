@@ -1,36 +1,45 @@
+import { ButtonPrimary, Container } from '../ui'
+
+const navItems = [
+  { href: '#solucao', label: 'Solucao' },
+  { href: '#demo', label: 'Demo' },
+  { href: '#preco', label: 'Preco' },
+  { href: '#faq', label: 'FAQ' },
+]
+
 export function Header() {
   return (
-    <header className="sticky top-0 z-30 border-b border-precya-border/70 bg-precya-bg/88 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/86 backdrop-blur-xl">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-precya-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-white"
       >
         Ir para o conteudo
       </a>
-      <div className="section-shell flex min-h-16 items-center justify-between gap-4">
-        <a
-          href="/"
-          aria-label="Precya"
-          className="text-lg font-semibold tracking-normal text-precya-ink"
-        >
-          Precya
+      <Container className="flex min-h-16 items-center justify-between gap-4">
+        <a href="#main-content" aria-label="Precya" className="flex items-center gap-2">
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-sm font-extrabold text-white shadow-soft">
+            P
+          </span>
+          <span className="text-lg font-extrabold text-text-primary">Precya</span>
         </a>
-        <nav
-          aria-label="Navegacao principal"
-          className="hidden items-center gap-5 text-sm font-medium text-precya-muted md:flex"
-        >
-          <a href="#benefits">Beneficios</a>
-          <a href="#simulator">Simulador</a>
-          <a href="#pricing">Planos</a>
-          <a href="#faq">FAQ</a>
+
+        <nav aria-label="Navegacao principal" className="hidden items-center gap-6 md:flex">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-sm font-bold text-text-secondary transition hover:text-primary"
+            >
+              {item.label}
+            </a>
+          ))}
         </nav>
-        <a
-          href="#final-cta"
-          className="rounded-full bg-precya-primary px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-precya-primary-dark focus:outline-none focus:ring-2 focus:ring-precya-primary focus:ring-offset-2"
-        >
+
+        <ButtonPrimary href="#preco" className="min-h-10 px-4 py-2 text-xs sm:text-sm">
           Teste gratis
-        </a>
-      </div>
+        </ButtonPrimary>
+      </Container>
     </header>
   )
 }

@@ -1,16 +1,27 @@
+import { faqItems } from '../../data/landing'
+import { Container, FAQItem, Motion, SectionSubtitle, SectionTitle } from '../ui'
+
 export function FAQSection() {
   return (
-    <section id="faq" className="section-block" aria-labelledby="faq-title">
-      <div className="section-shell">
-        <div className="placeholder-card p-6">
-          <h2 id="faq-title" className="text-2xl font-semibold text-precya-ink">
-            FAQSection
-          </h2>
-          <p className="mt-3 text-precya-muted">
-            Espaco reservado para perguntas frequentes em acordeon.
-          </p>
+    <section id="faq" className="bg-surface/55 py-14 md:py-20" aria-labelledby="faq-title">
+      <Container size="md">
+        <Motion>
+          <SectionTitle eyebrow="FAQ" id="faq-title">
+            Duvidas comuns antes de testar.
+          </SectionTitle>
+          <SectionSubtitle>
+            Respostas diretas para entender como o Precya apoia sua decisao sem complicar a rotina.
+          </SectionSubtitle>
+        </Motion>
+
+        <div className="mt-8 space-y-3">
+          {faqItems.map((item, index) => (
+            <Motion key={item.question} delay={index * 60}>
+              <FAQItem question={item.question} answer={item.answer} defaultOpen={index === 0} />
+            </Motion>
+          ))}
         </div>
-      </div>
+      </Container>
     </section>
   )
 }
