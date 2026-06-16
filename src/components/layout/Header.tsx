@@ -1,9 +1,9 @@
 import { BrandLogo, ButtonPrimary, Container } from '../ui'
 
 const navItems = [
-  { href: '#solucao', label: 'Solucao' },
+  { href: '#solucao', label: 'Solução' },
   { href: '#demo', label: 'Demo' },
-  { href: '#preco', label: 'Preco' },
+  { href: '#preco', label: 'Preço' },
   { href: '#faq', label: 'FAQ' },
 ]
 
@@ -37,7 +37,7 @@ export function Header() {
           href="#preco"
           className="!min-h-10 rounded-full px-4 py-2 text-xs font-semibold sm:text-sm"
         >
-          Teste gratis
+          Teste grátis
         </ButtonPrimary>
       </Container>
     </header>

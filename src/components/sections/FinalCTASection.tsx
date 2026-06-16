@@ -8,13 +8,14 @@ export function FinalCTASection() {
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-primary-dark p-7 text-white shadow-premium md:p-12">
             <div className="max-w-3xl">
               <p className="text-microcopy font-semibold uppercase tracking-[0.18em] text-primary-light">
-                Proximo passo
+                Próximo passo
               </p>
               <h2 id="final-cta-title" className="text-headline mt-4 font-semibold">
-                Pare de decidir descontos no improviso.
+                Você já trabalhou demais sem saber quanto sobrava. Isso pode mudar hoje.
               </h2>
               <p className="text-body mt-4 text-white/78">
-                Use o Precya para enxergar margem, lucro e desconto antes de responder sua paciente.
+                O Precya não vai resolver tudo. Mas vai te dar o que você mais precisa agora:
+                clareza, segurança e controle. Sem planilha. Sem ERP. Sem complexidade.
               </p>
             </div>
 
@@ -23,7 +24,7 @@ export function FinalCTASection() {
                 href="#preco"
                 className="bg-white text-primary-dark hover:bg-primary-light/90 hover:text-primary-dark"
               >
-                Quero testar o Precya
+                Quero testar o Precya grátis
               </ButtonPrimary>
               <ButtonSecondary
                 href="https://wa.me/5500000000000"
@@ -33,7 +34,7 @@ export function FinalCTASection() {
               </ButtonSecondary>
             </div>
             <p className="text-caption mt-4 font-medium text-white/72">
-              Sem cartao. Sem instalacao. Pensado para decisao rapida no celular.
+              Sem cartão. Sem compromisso. Começa em menos de 5 minutos.
             </p>
           </div>
         </Motion>

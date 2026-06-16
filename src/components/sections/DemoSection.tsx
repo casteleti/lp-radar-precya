@@ -18,12 +18,13 @@ export function DemoSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Motion>
-            <SectionTitle eyebrow="Demonstracao" id="demo-title">
-              Veja o impacto do desconto antes de responder a paciente.
+            <SectionTitle eyebrow="Demonstração" id="demo-title">
+              Imagine: a paciente acabou de pedir desconto no WhatsApp. Você tem 3 minutos para
+              responder.
             </SectionTitle>
             <SectionSubtitle>
-              Esta demo e visual e nao usa backend. Ela mostra como a decisao fica mais clara quando
-              lucro, margem e alerta aparecem juntos.
+              Com o Precya aberto, você move o slider de desconto e vê, em tempo real, o impacto no
+              lucro, o valor mínimo que pode aceitar e se a margem ainda está protegida.
             </SectionSubtitle>
             <div
               className="mt-7 flex gap-2"
@@ -47,8 +48,11 @@ export function DemoSection() {
               ))}
             </div>
             <ButtonSecondary href="#preco" className="mt-5 w-full sm:w-auto">
-              Quero testar com meus procedimentos
+              Simular meu primeiro procedimento grátis
             </ButtonSecondary>
+            <p className="text-caption mt-4 text-text-secondary">
+              Exatamente assim. Simples. Em segundos. Na palma da mão.
+            </p>
           </Motion>
 
           <Motion variant="scale-in" delay={120}>

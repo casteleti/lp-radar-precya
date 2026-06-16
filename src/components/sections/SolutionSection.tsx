@@ -15,15 +15,15 @@ export function SolutionSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <Motion>
-            <SectionTitle eyebrow="Solucao" id="solution-title">
-              O Precya transforma decisoes financeiras confusas em numeros claros.
+            <SectionTitle eyebrow="Solução" id="solution-title">
+              O Precya transforma a confusão financeira em uma resposta clara.
             </SectionTitle>
             <SectionSubtitle>
-              Voce informa os dados do procedimento e recebe uma leitura simples sobre preco minimo,
-              margem e impacto do desconto.
+              Sem planilha. Sem fórmula. Sem precisar entender de finanças. Você informa o
+              procedimento e o Precya calcula tudo em tempo real.
             </SectionSubtitle>
             <ButtonPrimary href="#demo" className="mt-7 w-full sm:w-auto">
-              Simular meu primeiro procedimento
+              Simular meu primeiro procedimento grátis
             </ButtonPrimary>
             <p className="text-caption mt-3 font-medium text-text-secondary">
               Veja o impacto antes de responder no WhatsApp.
@@ -33,7 +33,7 @@ export function SolutionSection() {
           <div className="grid gap-4 md:grid-cols-2">
             <Motion>
               <Card elevated>
-                <h3 className="text-xl font-semibold text-text-primary">Voce informa</h3>
+                <h3 className="text-xl font-semibold text-text-primary">Você informa</h3>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {solutionInputs.map((item) => (
                     <span
@@ -50,16 +50,21 @@ export function SolutionSection() {
             <Motion delay={120}>
               <Card elevated>
                 <h3 className="text-xl font-semibold text-text-primary">O Precya entrega</h3>
-                <ul className="mt-5 space-y-3">
+                <ul className="mt-5 space-y-4">
                   {solutionBenefits.map((item) => (
                     <li
-                      key={item}
-                      className="flex items-center gap-3 text-sm font-medium text-text-secondary"
+                      key={item.title}
+                      className="flex items-start gap-3 text-sm font-medium text-text-secondary"
                     >
-                      <IconWrapper tone="success" className="h-7 w-7 rounded-lg">
+                      <IconWrapper tone="success" className="mt-0.5 h-7 w-7 rounded-lg">
                         <CheckIcon />
                       </IconWrapper>
-                      {item}
+                      <span>
+                        <span className="block font-semibold text-text-primary">{item.title}</span>
+                        <span className="mt-1 block text-caption text-text-secondary">
+                          {item.description}
+                        </span>
+                      </span>
                     </li>
                   ))}
                 </ul>

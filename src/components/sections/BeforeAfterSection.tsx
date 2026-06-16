@@ -7,11 +7,10 @@ export function BeforeAfterSection() {
       <Container>
         <Motion>
           <SectionTitle eyebrow="Antes e depois" id="before-after-title">
-            Da decisao no improviso para uma resposta clara em segundos.
+            O que muda quando você para de adivinhar.
           </SectionTitle>
           <SectionSubtitle>
-            A mudanca nao e ter mais planilhas. E enxergar o que protege o lucro antes de conceder o
-            desconto.
+            A diferença não é o esforço. É ter o número certo na hora certa.
           </SectionSubtitle>
         </Motion>
 

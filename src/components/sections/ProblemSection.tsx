@@ -1,4 +1,4 @@
-import { problemCards } from '../../data/landing'
+import { invisiblePainItems, problemCards } from '../../data/landing'
 import { Card, Container, Motion, SectionSubtitle, SectionTitle } from '../ui'
 
 export function ProblemSection() {
@@ -7,15 +7,25 @@ export function ProblemSection() {
       <Container>
         <Motion>
           <SectionTitle eyebrow="Problema" id="problem-title">
-            A maioria das clinicas da desconto sem saber se ainda esta lucrando.
+            Você dá desconto, atende bem, trabalha muito. E no fim do mês... o caixa não fecha.
           </SectionTitle>
           <SectionSubtitle>
-            Quando a decisao depende de pressa, intuicao ou conversa no WhatsApp, a margem costuma
-            ficar invisivel.
+            Não é falta de paciente. Não é falta de esforço. É que a maioria das clínicas precifica
+            no feeling e descobre o prejuízo tarde demais.
           </SectionSubtitle>
         </Motion>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-3 md:grid-cols-2">
+          {invisiblePainItems.map((item, index) => (
+            <Motion key={item} delay={index * 55}>
+              <div className="rounded-[1.2rem] border border-white/80 bg-white/64 px-4 py-3 text-caption font-medium text-text-secondary shadow-soft backdrop-blur">
+                {item}
+              </div>
+            </Motion>
+          ))}
+        </div>
+
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {problemCards.map((item, index) => (
             <Motion key={item} delay={index * 70}>
               <Card className="h-full">
@@ -37,6 +47,13 @@ export function ProblemSection() {
             </Motion>
           ))}
         </div>
+
+        <Motion delay={180}>
+          <p className="text-body mt-8 max-w-3xl text-text-secondary">
+            Se alguma dessas frases soa familiar, você não está sozinha. E existe uma saída mais
+            simples do que você imagina.
+          </p>
+        </Motion>
       </Container>
     </section>
   )

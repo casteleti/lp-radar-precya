@@ -24,7 +24,7 @@ export function Footer() {
           </nav>
         </div>
         <p className="text-microcopy mt-6 text-text-secondary">
-          Precya. Landing page estatica para validacao de conversao.
+          © Precya — Precificação inteligente para clínicas estéticas.
         </p>
       </Container>
     </footer>

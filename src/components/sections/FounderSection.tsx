@@ -6,12 +6,13 @@ export function FounderSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <Motion>
-            <SectionTitle eyebrow="Humanizacao" id="founder-title">
-              Feito para clinicas que precisam decidir rapido, sem planilhas complicadas.
+            <SectionTitle eyebrow="Humanização" id="founder-title">
+              Criado para quem atende, cuida e ainda precisa cuidar do financeiro.
             </SectionTitle>
             <SectionSubtitle>
-              A experiencia foi pensada para quem precisa responder pacientes, organizar
-              procedimentos e preservar margem sem virar especialista em financas.
+              Clínicas estéticas não precisam de mais um sistema pesado. Precisam de clareza rápida,
+              na hora certa, sem julgamento. Sem linguagem financeira complicada. Sem ERP. Sem
+              planilha.
             </SectionSubtitle>
           </Motion>
 
@@ -24,14 +25,13 @@ export function FounderSection() {
                       P
                     </div>
                     <div>
-                      <p className="font-semibold text-text-primary">Espaco para foto ou video</p>
-                      <p className="text-caption text-text-secondary">
-                        fundadora, mockup futuro ou prova humana
-                      </p>
+                      <p className="font-semibold text-text-primary">Depoimento de cliente</p>
+                      <p className="text-caption text-text-secondary">Camila R., esteticista, MG</p>
                     </div>
                   </div>
                   <p className="text-body text-text-secondary">
-                    Um bloco reservado para conectar tecnologia com acolhimento e decisao pratica.
+                    “Antes eu dava desconto no feeling e ficava na dúvida se tinha feito certo.
+                    Agora eu respondo a paciente com o número na mão.”
                   </p>
                 </div>
               </div>

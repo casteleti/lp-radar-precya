@@ -7,12 +7,11 @@ export function PricingSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Motion>
-            <SectionTitle eyebrow="Preco" id="pricing-title">
-              Menos que o valor perdido em um desconto errado.
+            <SectionTitle eyebrow="Preço" id="pricing-title">
+              Um único desconto errado já cobre a mensalidade inteira.
             </SectionTitle>
             <SectionSubtitle>
-              Uma decisao de desconto sem margem clara pode custar mais do que uma ferramenta
-              simples para proteger seus procedimentos.
+              Quanto você perdeu no último mês em descontos que não calculou?
             </SectionSubtitle>
           </Motion>
 
@@ -25,12 +24,15 @@ export function PricingSection() {
                     Precya Profissional
                   </h3>
                   <p className="text-caption mt-2 text-text-secondary">
-                    Para clinicas que querem simular procedimentos com mais seguranca.
+                    Para clínicas que querem simular procedimentos com mais segurança.
                   </p>
                 </div>
                 <p className="text-left sm:text-right">
                   <span className="block text-4xl font-semibold text-text-primary">R$ XX</span>
-                  <span className="text-caption font-medium text-text-secondary">/mes</span>
+                  <span className="text-caption font-medium text-text-secondary">/mês</span>
+                  <span className="text-microcopy mt-1 block text-text-secondary">
+                    ou R$ XX/ano — economia de 2 meses
+                  </span>
                 </p>
               </div>
 
@@ -53,14 +55,17 @@ export function PricingSection() {
 
               <div className="mt-8">
                 <ButtonPrimary href="#final-cta" className="w-full">
-                  Comecar teste gratis
+                  Começar teste grátis
                 </ButtonPrimary>
                 <div className="mt-3 flex flex-wrap justify-center gap-2 text-microcopy font-semibold text-text-secondary">
                   <span className="rounded-full bg-background px-3 py-1.5">
                     Cancele quando quiser
                   </span>
-                  <span className="rounded-full bg-background px-3 py-1.5">Sem cartao</span>
+                  <span className="rounded-full bg-background px-3 py-1.5">Sem burocracia</span>
                 </div>
+                <p className="text-caption mt-4 text-center text-text-secondary">
+                  Menos que um café por dia. Mais que um desconto errado por semana.
+                </p>
               </div>
             </Card>
           </Motion>

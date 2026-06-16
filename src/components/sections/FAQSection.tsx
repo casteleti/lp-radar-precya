@@ -7,10 +7,10 @@ export function FAQSection() {
       <Container size="md">
         <Motion>
           <SectionTitle eyebrow="FAQ" id="faq-title">
-            Duvidas comuns antes de testar.
+            Dúvidas comuns antes de testar.
           </SectionTitle>
           <SectionSubtitle>
-            Respostas diretas para entender como o Precya apoia sua decisao sem complicar a rotina.
+            Respostas diretas para entender como o Precya apoia sua decisão sem complicar a rotina.
           </SectionSubtitle>
         </Motion>
 

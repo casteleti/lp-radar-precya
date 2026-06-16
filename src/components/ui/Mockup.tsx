@@ -41,7 +41,7 @@ export function ProductMockup({ compact = false, className }: ProductMockupProps
           <div className="mt-5 rounded-[1.4rem] border border-white/80 bg-white/86 p-4 shadow-soft">
             <div className="flex items-end justify-between">
               <div>
-                <p className="text-microcopy font-medium text-text-secondary">Preco minimo</p>
+                <p className="text-microcopy font-medium text-text-secondary">Preço mínimo</p>
                 <p className="mt-1 text-3xl font-semibold text-text-primary">R$ 287</p>
               </div>
               <div className="text-right">
@@ -58,7 +58,7 @@ export function ProductMockup({ compact = false, className }: ProductMockupProps
             {[
               ['Desconto', '25%'],
               ['Lucro', 'R$ 94'],
-              ['Comissao', 'R$ 48'],
+              ['Comissão', 'R$ 48'],
               ['Status', 'Aprovado'],
             ].map(([label, value], index) => (
               <div
@@ -144,7 +144,7 @@ export function DiscountMockup({ discount }: DiscountMockupProps) {
 
       <p className="text-caption mt-5 rounded-[1.3rem] border border-white/80 bg-surface-warm p-4 text-text-secondary">
         {isRisk
-          ? 'O desconto comeca a pressionar a margem. Vale revisar custos antes de responder.'
+          ? 'O desconto começa a pressionar a margem. Vale revisar custos antes de responder.'
           : 'A margem segue protegida dentro deste exemplo de procedimento.'}
       </p>
     </div>
